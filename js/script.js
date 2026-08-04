@@ -32,13 +32,12 @@ function closeMenu() {
 // Hamburger Click //
 hamburger.addEventListener("click", toggleMenu);
 
-//Close Menu After Clicking Link
-/
+// Close Menu After Clicking Link //
 navItems.forEach(link => {
     link.addEventListener("click", closeMenu);
 });
 
-//Close Menu When Clicking Outside// 
+// Close Menu When Clicking Outside // 
 document.addEventListener("click", (event) => {
 
     if (
