@@ -1,0 +1,91 @@
+/* HERO */
+.hero {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8rem 2rem;
+    text-align: center;
+
+    background:
+        radial-gradient(circle at top, #2563eb44, transparent 35%),
+        linear-gradient(180deg, #0f172a, #020617);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+
+    background-size: 45px 45px;
+    mask-image: radial-gradient(circle, black 60%, transparent);
+}
+
+.hero > * {
+    position: relative;
+    z-index: 2;
+}
+
+.hero img {
+    width: min(230px, 70vw);
+    aspect-ratio: 1;
+
+    margin-bottom: 2rem;
+
+    border: 4px solid var(--primary);
+    border-radius: 50%;
+
+    object-fit: cover;
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.45);
+
+    transition: transform var(--transition);
+}
+
+.hero img:hover {
+    transform: scale(1.05);
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 6vw, 4rem);
+}
+
+.hero .tagline {
+    margin-bottom: 2rem;
+    color: var(--text-light);
+    font-size: 1.25rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.social-links a {
+    padding: 0.75rem 1.4rem;
+
+    background: var(--primary);
+    color: #fff;
+    border-radius: 10px;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: background var(--transition), transform var(--transition);
+}
+
+.social-links a:hover {
+    background: var(--secondary);
+    transform: translateY(-5px);
+}

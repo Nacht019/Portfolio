@@ -1,0 +1,66 @@
+:root {
+    --bg: #020617;
+    --card: #111827;
+    --nav: rgba(15, 23, 42, 0.8);
+    --primary: #3B82F6;
+    --secondary: #60A5FA;
+    --text: #F8FAFC;
+    --text-light: #CBD5E1;
+    --border: rgba(255, 255, 255, 0.08);
+
+    --contact-bg: #0f172a;
+    --tag-bg: #1e3a8a;
+
+    --radius: 15px;
+    --transition: 0.3s ease;
+    --shadow-card: 0 15px 30px rgba(0, 0, 0, 0.25);
+    --shadow-card-large: 0 15px 35px rgba(0, 0, 0, 0.3);
+
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 0.75rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+}
+
+
+/* RESET & GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+a {
+    color: inherit;
+}
+
+::selection {
+    background: var(--primary);
+    color: #fff;
+}
