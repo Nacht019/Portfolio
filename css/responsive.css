@@ -80,7 +80,7 @@
     }
 
     /* Sections */
-    section {
+    main > section {
         padding: 4rem 1.5rem;
     }
 
@@ -180,4 +180,5 @@
         flex-direction: column;
         gap: 1rem;
     }
+
 }

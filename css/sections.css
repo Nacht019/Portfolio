@@ -1,17 +1,17 @@
 /* GENERAL SECTIONS */
-section {
+main > section {
     width: min(1100px, 100%);
     margin: 0 auto;
     padding: 5rem 2rem;
 }
 
-section h2 {
+main > section > h2 {
     margin-bottom: 2rem;
     text-align: center;
     font-size: 2.3rem;
 }
 
-section h2::after {
+main > section > h2::after {
     content: "";
     display: block;
 
@@ -157,6 +157,23 @@ section h2::after {
     color: var(--primary);
 }
 
+.contact-info a { 
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: .6rem; 
+    min-height: 44px; 
+    overflow-wrap: anywhere; 
+}
+
+.contact-icon { 
+    flex: 0 0 20px; 
+    width: 20px; 
+    height: 20px; 
+    color: var(--secondary); 
+}
+
+
 /* FOOTER */
 footer {
     padding: 2rem;
@@ -184,3 +201,5 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--secondary);
 }
+
+

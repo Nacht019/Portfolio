@@ -64,3 +64,10 @@ a {
     background: var(--primary);
     color: #fff;
 }
+body.modal-open { overflow: hidden; }
+:focus-visible { outline: 2px solid var(--secondary); outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    [data-aos] { opacity: 1 !important; transform: none !important; }
+}
