@@ -68,6 +68,7 @@ updateActiveLink();
 const modal = document.querySelector("#kulture-modal");
 const opener = document.querySelector('[data-project="kulture"]');
 const mainImage = modal.querySelector("#gallery-main-image");
+const galleryCaption = modal.querySelector("#gallery-caption");
 const thumbnails = [...modal.querySelectorAll(".gallery-thumbnail")];
 const playButton = modal.querySelector(".gallery-play");
 let imageIndex = 0;
@@ -80,6 +81,7 @@ function showImage(index) {
     const selected = thumbnails[imageIndex];
     mainImage.src = selected.dataset.image;
     mainImage.alt = selected.querySelector("img").alt;
+    galleryCaption.textContent = selected.dataset.caption;
     thumbnails.forEach((thumbnail, i) => {
         thumbnail.classList.toggle("active", i === imageIndex);
         thumbnail.setAttribute("aria-pressed", String(i === imageIndex));
@@ -134,3 +136,6 @@ reducedMotion.addEventListener("change", () => {
     }
 });
 showImage(0);
+
+// Keep the footer current without editing the HTML every year.
+document.querySelector("#copyright-year").textContent = new Date().getFullYear();

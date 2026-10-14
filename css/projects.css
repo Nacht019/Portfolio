@@ -422,17 +422,21 @@
     max-width: 850px;
     margin: 0;
     color: var(--text-light);
-    font-size: 0.95rem;
+    font-size: var(--modal-body-size, 0.95rem);
     line-height: 1.7;
 }
 .project-modal-header { 
     padding-right: 3rem; 
     margin-bottom: 1rem; 
 }
-.project-modal-label { 
-    color: var(--secondary); 
-    font-size: .75rem; 
-    letter-spacing: .12em; 
+.project-modal-label {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: var(--secondary);
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.08em;
 }
 .project-modal-header h2 { 
     font-size: clamp(1.15rem, 3vw, 1.6rem); 
@@ -620,7 +624,7 @@
     .project-modal-section h3 {
         font-size: 1rem;
     }
-    .project-modal-section p,
+    .project-modal { --modal-body-size: 0.9rem; }
     .project-feature-list {
         font-size: 0.9rem;
     }
@@ -644,3 +648,22 @@
     }
 }
 
+
+/* Descriptions remain visible while browsing the gallery. */
+.gallery-caption {
+    margin: 0 0 0.75rem;
+    color: var(--text-light);
+    font-size: var(--modal-body-size, 0.95rem);
+    line-height: 1.7;
+}
+.project-placeholder {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    gap: 0.5rem;
+    height: 220px;
+    background: radial-gradient(ellipse at center, #172554, #020617);
+    color: var(--secondary);
+}
+.project-placeholder > span { font-size: 3rem; font-weight: 600; }
+.project-placeholder small { color: var(--text-light); letter-spacing: 0.08em; }

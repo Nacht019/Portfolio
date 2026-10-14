@@ -133,57 +133,6 @@ main > section > h2::after {
     margin: 6px 0 0;
 }
 
-/* CONTACT */
-#contact {
-    max-width: 100%;
-    text-align: center;
-    background: var(--contact-bg);
-}
-
-.contact-info {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.contact-info a {
-    color: var(--text);
-    text-decoration: none;
-    transition: color var(--transition);
-}
-
-.contact-info a:hover {
-    color: var(--primary);
-}
-
-.contact-info a { 
-    display: inline-flex; 
-    align-items: center; 
-    justify-content: center; 
-    gap: .6rem; 
-    min-height: 44px; 
-    overflow-wrap: anywhere; 
-}
-
-.contact-icon { 
-    flex: 0 0 20px; 
-    width: 20px; 
-    height: 20px; 
-    color: var(--secondary); 
-}
-
-
-/* FOOTER */
-footer {
-    padding: 2rem;
-
-    border-top: 1px solid var(--border);
-
-    color: var(--text-light);
-    text-align: center;
-}
-
 /* SCROLLBAR */
 ::-webkit-scrollbar {
     width: 8px;

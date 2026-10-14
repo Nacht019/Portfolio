@@ -42,7 +42,7 @@
 
 </head>
 
-<body>
+<body id="top">
 
     <!-- =========================
          NAVIGATION
@@ -106,7 +106,8 @@
     <header class="hero">
 
         <img
-            src="images/Myphoto.jpg"
+            src="images/optimized/portrait.webp"
+            width="640" height="640" loading="eager" fetchpriority="high" decoding="async"
             alt="Portrait of Jhun Rey Ringor"
         >
 
@@ -296,7 +297,7 @@
                     <div class="skill">
 
                         <img
-                            class="skill-logo"
+                            class="skill-logo" loading="lazy" decoding="async" width="64" height="64"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg"
                             alt="R Programming logo"
                         >
@@ -428,6 +429,7 @@
             
                 </p>
 
+
             </div>
 
         </section>
@@ -470,6 +472,7 @@
                     vulnerabilities to support safer and more secure
                     application development.
                 </p>
+
 
             </div>
 
@@ -521,7 +524,7 @@
 
                 <article class="certificate-card">
 
-                    <div class="certificate-content">
+                    <div class="certificate-content"> 
 
                         <h3>
                             Cybersecurity Buff:"Defending Against SQL Injection and Brute Force Attacks"
@@ -544,7 +547,7 @@
 
                 </article>
 
-
+                
                 <!-- YOLOv8 -->
 
                 <article class="certificate-card">
@@ -594,8 +597,11 @@
         <article class="project-card">
 
     <img
-        src="images/Capstone/Capstone Project.jpg"
-        alt="Kulture 3D mobile learning application"
+        src="images/optimized/kulture-cover.webp"
+        srcset="images/optimized/kulture-cover.webp 800w, images/optimized/kulture-01.webp 1600w"
+        sizes="(max-width: 768px) calc(100vw - 3rem), 520px"
+        width="800" height="360" loading="lazy" decoding="async"
+        alt="Kulture main menu with Play, Tutorial, and Customize buttons in a 3D park."
     >
 
     <div class="project-info">
@@ -635,10 +641,7 @@
 
          <article class="project-card">
 
-            <img
-                src="images/project-placeholder.png"
-                alt="Project placeholder"
-            >
+            <div class="project-placeholder" aria-hidden="true"><span>&lt;/&gt;</span><small>More to come</small></div>
 
             <div class="project-info">
 
@@ -738,8 +741,10 @@
 
             <img
                 id="gallery-main-image"
-                src="images/Capstone/Capstone Project.jpg"
-                alt="Kulture project screenshot"
+                aria-describedby="gallery-caption"
+                src="images/optimized/kulture-01.webp"
+                alt="Kulture main menu with Play, Tutorial, and Customize buttons in a 3D park."
+                width="1600" height="720" loading="lazy" decoding="async"
             >
 
 
@@ -760,6 +765,8 @@
              THUMBNAILS
         ========================== -->
 
+        <p class="gallery-caption" id="gallery-caption">Kulture main menu with Play, Tutorial, and Customize buttons in a 3D park.</p>
+
         <button type="button" class="gallery-play" aria-pressed="false">Play slideshow</button>
 
         <div
@@ -772,12 +779,13 @@
             <button
                 class="gallery-thumbnail active"
                 type="button"
-                data-image="images/Capstone/Capstone Project.jpg"
-                aria-label="View Kulture image 1"
+                data-image="images/optimized/kulture-01.webp"
+                aria-label="View main menu"
+                data-caption="Kulture main menu with Play, Tutorial, and Customize buttons in a 3D park."
             >
-                <img
-                    src="images/Capstone/Capstone Project.jpg"
-                    alt="Kulture project screenshot 1"
+                <img width="320" height="144" loading="lazy" decoding="async"
+                    src="images/optimized/kulture-01-thumb.webp"
+                    alt="Kulture main menu with Play, Tutorial, and Customize buttons in a 3D park."
                 >
             </button>
 
@@ -787,12 +795,13 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/Capstone/Capstone Project1.jpg"
-                aria-label="View Kulture image 2"
+                data-image="images/optimized/kulture-02.webp"
+                aria-label="View tumbang preso game menu"
+                data-caption="Tumbang Preso game menu with links to notes, history, trivia, and pictures."
             >
-                <img
-                    src="images/Capstone/Capstone Project1.jpg"
-                    alt="Kulture project screenshot 2"
+                <img width="320" height="144" loading="lazy" decoding="async"
+                    src="images/optimized/kulture-02-thumb.webp"
+                    alt="Tumbang Preso game menu with links to notes, history, trivia, and pictures."
                 >
             </button>
 
@@ -802,12 +811,13 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/Capstone/Capstone Project2.jpg"
-                aria-label="View Kulture image 3"
+                data-image="images/optimized/kulture-03.webp"
+                aria-label="View batuhang bola game menu"
+                data-caption="Batuhang Bola game menu with links to notes, history, trivia, and pictures."
             >
-                <img
-                    src="images/Capstone/Capstone Project2.jpg"
-                    alt="Kulture project screenshot 3"
+                <img width="320" height="144" loading="lazy" decoding="async"
+                    src="images/optimized/kulture-03-thumb.webp"
+                    alt="Batuhang Bola game menu with links to notes, history, trivia, and pictures."
                 >
             </button>
 
@@ -817,12 +827,13 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/Capstone/Capstone Project3.jpg"
-                aria-label="View Kulture image 4"
+                data-image="images/optimized/kulture-04.webp"
+                aria-label="View tumbang preso history"
+                data-caption="Tumbang Preso history page explaining the name and objective of the traditional game."
             >
-                <img
-                    src="images/Capstone/Capstone Project3.jpg"
-                    alt="Kulture project screenshot 4"
+                <img width="320" height="144" loading="lazy" decoding="async"
+                    src="images/optimized/kulture-04-thumb.webp"
+                    alt="Tumbang Preso history page explaining the name and objective of the traditional game."
                 >
             </button>
 
@@ -832,12 +843,13 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/Capstone/Capstone Project4.jpg"
-                aria-label="View Kulture image 5"
+                data-image="images/optimized/kulture-05.webp"
+                aria-label="View patintero game menu"
+                data-caption="Patintero game menu with links to notes, history, trivia, and pictures."
             >
-                <img
-                    src="images/Capstone/Capstone Project4.jpg"
-                    alt="Kulture project screenshot 5"
+                <img width="320" height="144" loading="lazy" decoding="async"
+                    src="images/optimized/kulture-05-thumb.webp"
+                    alt="Patintero game menu with links to notes, history, trivia, and pictures."
                 >
             </button>
 
@@ -847,12 +859,13 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/Capstone/Capstone Project5.jpg"
-                aria-label="View Kulture image 6"
+                data-image="images/optimized/kulture-06.webp"
+                aria-label="View patintero instructions"
+                data-caption="Patintero instructions showing the objective, rules, and a 3D character."
             >
-                <img
-                    src="images/Capstone/Capstone Project5.jpg"
-                    alt="Kulture project screenshot 6"
+                <img width="320" height="144" loading="lazy" decoding="async"
+                    src="images/optimized/kulture-06-thumb.webp"
+                    alt="Patintero instructions showing the objective, rules, and a 3D character."
                 >
             </button>
 
@@ -862,12 +875,13 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/Capstone/Capstone Project6.jpg"
-                aria-label="View Kulture image 7"
+                data-image="images/optimized/kulture-07.webp"
+                aria-label="View patintero history"
+                data-caption="Patintero history page describing the game's origins and traditional play."
             >
-                <img
-                    src="images/Capstone/Capstone Project6.jpg"
-                    alt="Kulture project screenshot 7"
+                <img width="320" height="144" loading="lazy" decoding="async"
+                    src="images/optimized/kulture-07-thumb.webp"
+                    alt="Patintero history page describing the game's origins and traditional play."
                 >
             </button>
 
@@ -877,12 +891,13 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/Capstone/Capstone Project7.jpg"
-                aria-label="View Kulture image 8"
+                data-image="images/optimized/kulture-08.webp"
+                aria-label="View batuhang bola photo gallery"
+                data-caption="Batuhang Bola picture gallery showing children playing outdoors."
             >
-                <img
-                    src="images/Capstone/Capstone Project7.jpg"
-                    alt="Kulture project screenshot 8"
+                <img width="320" height="144" loading="lazy" decoding="async"
+                    src="images/optimized/kulture-08-thumb.webp"
+                    alt="Batuhang Bola picture gallery showing children playing outdoors."
                 >
             </button>
 
@@ -892,12 +907,13 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/Capstone/Capstone Project8.jpg"
-                aria-label="View Kulture image 9"
+                data-image="images/optimized/kulture-09.webp"
+                aria-label="View 3d character scene"
+                data-caption="A group of 3D characters gathered in a park, with a Skip button."
             >
-                <img
-                    src="images/Capstone/Capstone Project8.jpg"
-                    alt="Kulture project screenshot 9"
+                <img width="320" height="144" loading="lazy" decoding="async"
+                    src="images/optimized/kulture-09-thumb.webp"
+                    alt="A group of 3D characters gathered in a park, with a Skip button."
                 >
             </button>
 
@@ -907,12 +923,13 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/Capstone/Capstone Project9.jpg"
-                aria-label="View Kulture image 10"
+                data-image="images/optimized/kulture-10.webp"
+                aria-label="View throwing controls"
+                data-caption="Overhead gameplay view with Hold and Release instructions and a Press Hold control."
             >
-                <img
-                    src="images/Capstone/Capstone Project9.jpg"
-                    alt="Kulture project screenshot 10"
+                <img width="320" height="144" loading="lazy" decoding="async"
+                    src="images/optimized/kulture-10-thumb.webp"
+                    alt="Overhead gameplay view with Hold and Release instructions and a Press Hold control."
                 >
             </button>
 
@@ -922,12 +939,13 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/Capstone/Capstone Project10.jpg"
-                aria-label="View Kulture image 11"
+                data-image="images/optimized/kulture-11.webp"
+                aria-label="View timed gameplay"
+                data-caption="Overhead gameplay with a countdown timer, movement joystick, and action buttons."
             >
-                <img
-                    src="images/Capstone/Capstone Project10.jpg"
-                    alt="Kulture project screenshot 11"
+                <img width="320" height="144" loading="lazy" decoding="async"
+                    src="images/optimized/kulture-11-thumb.webp"
+                    alt="Overhead gameplay with a countdown timer, movement joystick, and action buttons."
                 >
             </button>
 
@@ -937,12 +955,13 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/Capstone/Capstone Project11.jpg"
-                aria-label="View Kulture image 12"
+                data-image="images/optimized/kulture-12.webp"
+                aria-label="View score-based gameplay"
+                data-caption="Overhead gameplay with a score of zero, a Reach 10 target, and mobile controls."
             >
-                <img
-                    src="images/Capstone/Capstone Project11.jpg"
-                    alt="Kulture project screenshot 12"
+                <img width="320" height="144" loading="lazy" decoding="async"
+                    src="images/optimized/kulture-12-thumb.webp"
+                    alt="Overhead gameplay with a score of zero, a Reach 10 target, and mobile controls."
                 >
             </button>
 
@@ -952,12 +971,13 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/Capstone/Capstone Project12.jpg"
-                aria-label="View Kulture image 13"
+                data-image="images/optimized/kulture-13.webp"
+                aria-label="View patintero success screen"
+                data-caption="Patintero success screen showing 100 points, replay choices, and a next-level button."
             >
-                <img
-                    src="images/Capstone/Capstone Project12.jpg"
-                    alt="Kulture project screenshot 13"
+                <img width="320" height="144" loading="lazy" decoding="async"
+                    src="images/optimized/kulture-13-thumb.webp"
+                    alt="Patintero success screen showing 100 points, replay choices, and a next-level button."
                 >
             </button>
 
@@ -967,12 +987,13 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/Capstone/Capstone Project13.jpg"
-                aria-label="View Kulture image 14"
+                data-image="images/optimized/kulture-14.webp"
+                aria-label="View batuhang bola failure screen"
+                data-caption="Batuhang Bola failure screen with Yes and No replay choices."
             >
-                <img
-                    src="images/Capstone/Capstone Project13.jpg"
-                    alt="Kulture project screenshot 14"
+                <img width="320" height="144" loading="lazy" decoding="async"
+                    src="images/optimized/kulture-14-thumb.webp"
+                    alt="Batuhang Bola failure screen with Yes and No replay choices."
                 >
             </button>
 
@@ -1081,7 +1102,10 @@
                 </h3>
 
                 <p>
-                    Capstone Project Developer
+                    I contributed to game programming and built user interfaces for Kulture.
+                    I helped implement the Time-Stepping and Runge-Kutta algorithms
+                    used in its physics simulations and created some of the 3D models.
+                    I also handled student testing and evaluation with Grade 5 learners.
                 </p>
 
             </section>
@@ -1110,41 +1134,34 @@
              CONTACT
         ========================== -->
 
-        <section
-            id="contact"
-            data-aos="fade-up"
-        >
-
-            <h2>Get In Touch</h2>
-
-            <div class="contact-info">
-
-                <a href="mailto:ringorjhunrey@gmail.com">
-                    <svg class="contact-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg> ringorjhunrey@gmail.com
-                </a>
-
-                <a href="tel:+639455043124">
-                    <svg class="contact-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M10 18h4"/></svg> 09455043124
-                </a>
-
-                <a
+        <section id="contact" class="contact-section" data-aos="fade-up">
+            <div class="contact-topline">
+                <p class="section-eyebrow">LET’S CONNECT</p>
+                <a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+            </div>
+            <div class="contact-heading">
+                <h2>Have a project in mind?</h2>
+                <p>I’m looking for an opportunity to contribute, keep learning,
+                    and build useful software with a team.</p>
+            </div>
+            <div class="contact-card-grid">
+                <a class="contact-card" href="mailto:ringorjhunrey@gmail.com">
+                    <svg class="contact-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg><span class="contact-card-copy"><small>Email me</small><span>ringorjhunrey@gmail.com</span></span><span class="contact-arrow" aria-hidden="true">↗</span></a>
+                <a class="contact-card" href="tel:+639455043124">
+                    <svg class="contact-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M10 18h4"/></svg><span class="contact-card-copy"><small>Call me</small><span>09455043124</span></span><span class="contact-arrow" aria-hidden="true">↗</span></a>
+                <a class="contact-card"
                     href="https://linkedin.com/in/yourprofile"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <svg class="contact-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor"><path d="M4 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM2 9h4v13H2zm7 0h4v2c1-2 3-2 4-2 4 0 5 2 5 6v7h-4v-7c0-2-1-3-2-3-2 0-3 1-3 3v7H9z"/></svg> LinkedIn
-                </a>
-
-                <a
+                    <svg class="contact-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor"><path d="M4 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM2 9h4v13H2zm7 0h4v2c1-2 3-2 4-2 4 0 5 2 5 6v7h-4v-7c0-2-1-3-2-3-2 0-3 1-3 3v7H9z"/></svg><span class="contact-card-copy"><small>Connect on LinkedIn</small><span>LinkedIn</span></span><span class="contact-arrow" aria-hidden="true">↗</span></a>
+                <a class="contact-card"
                     href="https://github.com/yourusername"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <svg class="contact-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.6 9.6 0 0 1 12 6.82c.85 0 1.71.11 2.51.33 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.69 0 3.85-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg> GitHub
-                </a>
-
+                    <svg class="contact-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.6 9.6 0 0 1 12 6.82c.85 0 1.71.11 2.51.33 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.69 0 3.85-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg><span class="contact-card-copy"><small>Explore GitHub</small><span>GitHub</span></span><span class="contact-arrow" aria-hidden="true">↗</span></a>
             </div>
-
         </section>
 
     </main>
@@ -1154,12 +1171,10 @@
          FOOTER
     ========================== -->
 
-    <footer>
-
-        <p>
-            © 2026 Jhun Rey Ringor. All rights reserved.
-        </p>
-
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p class="footer-copyright">© <span id="copyright-year">2026</span> Jhun Rey Ringor. All rights reserved.</p>
+        </div>
     </footer>
 
 

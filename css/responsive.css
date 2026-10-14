@@ -175,10 +175,6 @@
     .certificate-button {
         width: 100%;
     }
-    /* Contact */
-    .contact-info {
-        flex-direction: column;
-        gap: 1rem;
-    }
+
 
 }

@@ -94,7 +94,7 @@
         transform var(--transition);
 }
 
-.certificate-button:hover {
+.certificate-button:not(:disabled):hover {
     background: var(--primary);
     color: #fff;
 
