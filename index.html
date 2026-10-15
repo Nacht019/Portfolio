@@ -11,17 +11,24 @@
 
     <meta
         name="description"
-        content="Jhun Rey Ringor - Front-end Developer Portfolio"
+        content="Jhun Rey Ringor — Front-end and mobile developer. Explore my React Native experience, Unity capstone project, skills, and certifications."
     >
 
     <title>Jhun Rey Ringor | Portfolio</title>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"
         rel="stylesheet"
     >
 
@@ -38,7 +45,10 @@
     >
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link
+        rel="stylesheet"
+        href="css/styles.css"
+    >
 
 </head>
 
@@ -50,9 +60,12 @@
 
     <nav aria-label="Main navigation">
 
-        <div class="logo">JR</div>
+        <div class="logo">JR_</div>
 
-        <ul class="nav-links" id="main-navigation">
+        <ul
+            class="nav-links"
+            id="main-navigation"
+        >
 
             <li>
                 <a href="#about">About</a>
@@ -103,51 +116,60 @@
          HERO
     ========================== -->
 
-    <header class="hero">
-
-        <img
-            src="images/optimized/portrait.webp"
-            width="640" height="640" loading="eager" fetchpriority="high" decoding="async"
-            alt="Portrait of Jhun Rey Ringor"
-        >
-
-        <p class="intro">Hi, I'm</p>
-
-        <h1>Jhun Rey Ringor</h1>
-
-        <p class="tagline">
-            Full Stack Developer
-        </p>
-
-        <div class="social-links">
-
+    <header
+        class="hero"
+        aria-labelledby="hero-title"
+    >
+    <div class="hero-copy">
+        <p class="terminal-greeting">&gt; hello, world</p>
+        <h1 id="hero-title">Jhun Rey <span>Ringor</span></h1>
+        <p class="tagline">Front-end &amp; Mobile Developer</p>
+        <p class="hero-summary">IT graduate building interfaces, mobile apps, and interactive experiences.
+            With hands-on React Native experience and a Unity capstone project, I’m ready to keep learning and contribute to a team.</p>
+        <div class="hero-actions">
             <a
-                href="https://linkedin.com/in/yourprofile"
+                class="primary-action"
+                href="#projects"
+            >Explore projects <span aria-hidden="true">→</span></a>
+            <a
+                class="secondary-action"
+                href="images/Graduation/Jhun_Rey_Ringor_CV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-            >
-                LinkedIn
-            </a>
-
+            >View résumé <span aria-hidden="true">↗</span></a>
+        </div>
+        <div
+            class="hero-socials"
+            aria-label="Social profiles"
+        >
             <a
                 href="https://github.com/yourusername"
                 target="_blank"
                 rel="noopener noreferrer"
-            >
-                GitHub
-            </a>
-
+            >GitHub ↗</a>
             <a
-                href="your-resume.pdf"
+                href="https://linkedin.com/in/yourprofile"
                 target="_blank"
                 rel="noopener noreferrer"
-            >
-                Resume
-            </a>
-
+            >LinkedIn ↗</a>
         </div>
-
-    </header>
+    </div>
+    <div
+        class="code-window"
+        aria-label="Developer introduction shown as JavaScript"
+    >
+        <div class="code-toolbar">
+            <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span>developer.js</span>
+        </div>
+        <pre><code><span class="code-line"><span class="syntax-keyword">const</span> developer = {</span>
+<span class="code-line">  name: <span class="syntax-string">'Jhun Rey'</span>,</span>
+<span class="code-line">  focus: [<span class="syntax-string">'Web'</span>, <span class="syntax-string">'Mobile'</span>, <span class="syntax-string">'Games'</span>],</span>
+<span class="code-line">  mindset: <span class="syntax-string">'Always learning'</span></span>
+<span class="code-line">};</span>
+<span class="code-line"><span class="code-cursor" aria-hidden="true">▏</span></span></code></pre>
+    </div>
+</header>
 
 
     <main>
@@ -161,11 +183,11 @@
             data-aos="fade-up"
         >
 
-            <h2>About Me</h2>
+            <div class="section-heading"><h2><span class="section-number" aria-hidden="true">01</span> · About Me</h2>
 
-            <div class="about-content">
+            </div><div class="about-content">
 
-                <p>
+                <div class="about-copy"><p>
                     I’m a BSIT graduate from the Technological Institute
                     of the Philippines with hands-on experience in React
                     Native mobile application development. I’m passionate
@@ -176,7 +198,17 @@
                     growing as a professional developer.
                 </p>
 
-            </div>
+            </div><figure class="graduation-portrait">
+<img
+    src="images/Graduation/graduation-cutout.png"
+    alt="Jhun Rey Ringor in his graduation attire"
+    width="1254"
+    height="1254"
+    loading="lazy"
+    decoding="async"
+>
+<figcaption>Jhun Rey Ringor<span>BS Information Technology</span></figcaption>
+</figure></div>
 
         </section>
 
@@ -190,16 +222,21 @@
             data-aos="fade-up"
         >
 
-            <h2>Skills</h2>
+            <div class="section-heading"><h2><span class="section-number" aria-hidden="true">02</span> · Skills</h2>
 
-            <p class="skills-intro">
-                Technologies and tools I work with
-            </p>
+            </div><!-- Web Development -->
 
+            <!-- Mobile Development -->
 
-            <!-- Web Development -->
+            <!-- Programming Languages -->
 
-            <div class="skill-category">
+            <!-- Database -->
+
+            <!-- Game Development -->
+
+            <!-- Frameworks & Tools -->
+
+            <div class="skill-panels"><div class="skill-category">
 
                 <div class="skill-category-title">
 
@@ -241,8 +278,6 @@
             </div>
 
 
-            <!-- Mobile Development -->
-
             <div class="skill-category">
 
                 <div class="skill-category-title">
@@ -270,8 +305,6 @@
             </div>
 
 
-            <!-- Programming Languages -->
-
             <div class="skill-category">
 
                 <div class="skill-category-title">
@@ -297,7 +330,11 @@
                     <div class="skill">
 
                         <img
-                            class="skill-logo" loading="lazy" decoding="async" width="64" height="64"
+                            class="skill-logo"
+                            loading="lazy"
+                            decoding="async"
+                            width="64"
+                            height="64"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg"
                             alt="R Programming logo"
                         >
@@ -310,8 +347,6 @@
 
             </div>
 
-
-            <!-- Database -->
 
             <div class="skill-category">
 
@@ -340,8 +375,6 @@
             </div>
 
 
-            <!-- Game Development -->
-
             <div class="skill-category">
 
                 <div class="skill-category-title">
@@ -363,8 +396,6 @@
 
             </div>
 
-
-            <!-- Frameworks & Tools -->
 
             <div class="skill-category">
 
@@ -402,7 +433,7 @@
 
             </div>
 
-        </section>
+        </div></section>
          <!-- =========================
              EDUCATION
         ========================== -->
@@ -412,9 +443,9 @@
             data-aos="fade-up"
         >
 
-            <h2>Education</h2>
+            <div class="section-heading"><h2><span class="section-number" aria-hidden="true">03</span> · Education</h2>
 
-            <div class="education-item">
+            </div><div class="education-item">
 
                 <h3>
                     Bachelor of Science in Information Technology
@@ -444,9 +475,9 @@
             data-aos="fade-up"
         >
 
-            <h2>Experience</h2>
+            <div class="section-heading"><h2><span class="section-number" aria-hidden="true">04</span> · Experience</h2>
 
-            <div
+            </div><div
                 class="experience-item"
                 data-aos="fade-up"
             >
@@ -488,9 +519,9 @@
             data-aos="fade-up"
         >
 
-            <h2>Certifications</h2>
+            <div class="section-heading"><h2><span class="section-number" aria-hidden="true">05</span> · Certifications</h2>
 
-            <div class="certifications-list">
+            </div><div class="certifications-list">
 
                 <!-- Building Cyber Resilience -->
 
@@ -537,7 +568,7 @@
                     </div>
 
                     <a
-                        href="images/Certificates/Cybersecurity Buff.png"
+                        href="images/Certificates/Cybersecurity%20Buff.png"
                         class="certificate-button"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -567,7 +598,7 @@
                     </div>
 
                     <a
-                        href="images/Certificates/IOT CERT.png"
+                        href="images/Certificates/IOT%20CERT.png"
                         class="certificate-button"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -590,17 +621,20 @@
     id="projects"
     data-aos="fade-up"
 >
-    <h2>Projects</h2>
+    <div class="section-heading"><h2><span class="section-number" aria-hidden="true">06</span> · Projects</h2>
 
-    <div class="projects-grid">
+    </div><div class="projects-grid">
 
         <article class="project-card">
 
     <img
-        src="images/optimized/kulture-cover.webp"
-        srcset="images/optimized/kulture-cover.webp 800w, images/optimized/kulture-01.webp 1600w"
+        src="images/Capstone/kulture-cover.webp"
+        srcset="images/Capstone/kulture-cover.webp 800w, images/Capstone/kulture-01.webp 1600w"
         sizes="(max-width: 768px) calc(100vw - 3rem), 520px"
-        width="800" height="360" loading="lazy" decoding="async"
+        width="800"
+        height="360"
+        loading="lazy"
+        decoding="async"
         alt="Kulture main menu with Play, Tutorial, and Customize buttons in a 3D park."
     >
 
@@ -639,34 +673,8 @@
 
 </article>
 
-         <article class="project-card">
-
-            <div class="project-placeholder" aria-hidden="true"><span>&lt;/&gt;</span><small>More to come</small></div>
-
-            <div class="project-info">
-
-                <h3>Future Project</h3>
-
-                <p>
-                    A new project will be added here soon. This space is
-                    reserved for showcasing another application, website,
-                    or software project.
-                </p>
-
-                <div class="tags">
-                    <span class="tag">Coming Soon</span>
-                </div>
-
-                <div class="links">
-                    <button type="button" class="project-button" disabled>Coming soon</button>
-                </div>
-
-            </div>
-
-        </article>
-
-    </div>
-</section>
+         </div>
+<div class="project-contribution"><h3>My contribution</h3><p>I contributed to game programming and UI, helped implement the physics algorithms, created some 3D models, and handled student testing and evaluation.</p></div></section>
 
 <!-- =========================
      PROJECT MODAL
@@ -683,9 +691,7 @@
 
 
     <!-- Modal Content -->
-    <div
-        class="project-modal-content"
-    >
+    <div class="project-modal-content">
 
         <!-- =========================
              MODAL HEADER
@@ -714,7 +720,7 @@
                 autofocus
                 aria-label="Close project details"
             >
-                &times;
+                ×
             </button>
 
         </div>
@@ -733,7 +739,7 @@
                 class="gallery-arrow gallery-prev"
                 aria-label="Previous image"
             >
-                &#10094;
+                ❮
             </button>
 
 
@@ -742,9 +748,12 @@
             <img
                 id="gallery-main-image"
                 aria-describedby="gallery-caption"
-                src="images/optimized/kulture-01.webp"
+                src="images/Capstone/kulture-01.webp"
                 alt="Kulture main menu with Play, Tutorial, and Customize buttons in a 3D park."
-                width="1600" height="720" loading="lazy" decoding="async"
+                width="1600"
+                height="720"
+                loading="lazy"
+                decoding="async"
             >
 
 
@@ -755,7 +764,7 @@
                 class="gallery-arrow gallery-next"
                 aria-label="Next image"
             >
-                &#10095;
+                ❯
             </button>
 
         </div>
@@ -765,9 +774,16 @@
              THUMBNAILS
         ========================== -->
 
-        <p class="gallery-caption" id="gallery-caption">Kulture main menu with Play, Tutorial, and Customize buttons in a 3D park.</p>
+        <p
+            class="gallery-caption"
+            id="gallery-caption"
+        >Kulture main menu with Play, Tutorial, and Customize buttons in a 3D park.</p>
 
-        <button type="button" class="gallery-play" aria-pressed="false">Play slideshow</button>
+        <button
+            type="button"
+            class="gallery-play"
+            aria-pressed="false"
+        >Play slideshow</button>
 
         <div
             class="gallery-thumbnails"
@@ -779,12 +795,16 @@
             <button
                 class="gallery-thumbnail active"
                 type="button"
-                data-image="images/optimized/kulture-01.webp"
+                data-image="images/Capstone/kulture-01.webp"
                 aria-label="View main menu"
                 data-caption="Kulture main menu with Play, Tutorial, and Customize buttons in a 3D park."
             >
-                <img width="320" height="144" loading="lazy" decoding="async"
-                    src="images/optimized/kulture-01-thumb.webp"
+                <img
+                    width="320"
+                    height="144"
+                    loading="lazy"
+                    decoding="async"
+                    src="images/Capstone/kulture-01-thumb.webp"
                     alt="Kulture main menu with Play, Tutorial, and Customize buttons in a 3D park."
                 >
             </button>
@@ -795,12 +815,16 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/optimized/kulture-02.webp"
+                data-image="images/Capstone/kulture-02.webp"
                 aria-label="View tumbang preso game menu"
                 data-caption="Tumbang Preso game menu with links to notes, history, trivia, and pictures."
             >
-                <img width="320" height="144" loading="lazy" decoding="async"
-                    src="images/optimized/kulture-02-thumb.webp"
+                <img
+                    width="320"
+                    height="144"
+                    loading="lazy"
+                    decoding="async"
+                    src="images/Capstone/kulture-02-thumb.webp"
                     alt="Tumbang Preso game menu with links to notes, history, trivia, and pictures."
                 >
             </button>
@@ -811,12 +835,16 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/optimized/kulture-03.webp"
+                data-image="images/Capstone/kulture-03.webp"
                 aria-label="View batuhang bola game menu"
                 data-caption="Batuhang Bola game menu with links to notes, history, trivia, and pictures."
             >
-                <img width="320" height="144" loading="lazy" decoding="async"
-                    src="images/optimized/kulture-03-thumb.webp"
+                <img
+                    width="320"
+                    height="144"
+                    loading="lazy"
+                    decoding="async"
+                    src="images/Capstone/kulture-03-thumb.webp"
                     alt="Batuhang Bola game menu with links to notes, history, trivia, and pictures."
                 >
             </button>
@@ -827,12 +855,16 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/optimized/kulture-04.webp"
+                data-image="images/Capstone/kulture-04.webp"
                 aria-label="View tumbang preso history"
                 data-caption="Tumbang Preso history page explaining the name and objective of the traditional game."
             >
-                <img width="320" height="144" loading="lazy" decoding="async"
-                    src="images/optimized/kulture-04-thumb.webp"
+                <img
+                    width="320"
+                    height="144"
+                    loading="lazy"
+                    decoding="async"
+                    src="images/Capstone/kulture-04-thumb.webp"
                     alt="Tumbang Preso history page explaining the name and objective of the traditional game."
                 >
             </button>
@@ -843,12 +875,16 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/optimized/kulture-05.webp"
+                data-image="images/Capstone/kulture-05.webp"
                 aria-label="View patintero game menu"
                 data-caption="Patintero game menu with links to notes, history, trivia, and pictures."
             >
-                <img width="320" height="144" loading="lazy" decoding="async"
-                    src="images/optimized/kulture-05-thumb.webp"
+                <img
+                    width="320"
+                    height="144"
+                    loading="lazy"
+                    decoding="async"
+                    src="images/Capstone/kulture-05-thumb.webp"
                     alt="Patintero game menu with links to notes, history, trivia, and pictures."
                 >
             </button>
@@ -859,12 +895,16 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/optimized/kulture-06.webp"
+                data-image="images/Capstone/kulture-06.webp"
                 aria-label="View patintero instructions"
                 data-caption="Patintero instructions showing the objective, rules, and a 3D character."
             >
-                <img width="320" height="144" loading="lazy" decoding="async"
-                    src="images/optimized/kulture-06-thumb.webp"
+                <img
+                    width="320"
+                    height="144"
+                    loading="lazy"
+                    decoding="async"
+                    src="images/Capstone/kulture-06-thumb.webp"
                     alt="Patintero instructions showing the objective, rules, and a 3D character."
                 >
             </button>
@@ -875,12 +915,16 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/optimized/kulture-07.webp"
+                data-image="images/Capstone/kulture-07.webp"
                 aria-label="View patintero history"
                 data-caption="Patintero history page describing the game's origins and traditional play."
             >
-                <img width="320" height="144" loading="lazy" decoding="async"
-                    src="images/optimized/kulture-07-thumb.webp"
+                <img
+                    width="320"
+                    height="144"
+                    loading="lazy"
+                    decoding="async"
+                    src="images/Capstone/kulture-07-thumb.webp"
                     alt="Patintero history page describing the game's origins and traditional play."
                 >
             </button>
@@ -891,12 +935,16 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/optimized/kulture-08.webp"
+                data-image="images/Capstone/kulture-08.webp"
                 aria-label="View batuhang bola photo gallery"
                 data-caption="Batuhang Bola picture gallery showing children playing outdoors."
             >
-                <img width="320" height="144" loading="lazy" decoding="async"
-                    src="images/optimized/kulture-08-thumb.webp"
+                <img
+                    width="320"
+                    height="144"
+                    loading="lazy"
+                    decoding="async"
+                    src="images/Capstone/kulture-08-thumb.webp"
                     alt="Batuhang Bola picture gallery showing children playing outdoors."
                 >
             </button>
@@ -907,12 +955,16 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/optimized/kulture-09.webp"
+                data-image="images/Capstone/kulture-09.webp"
                 aria-label="View 3d character scene"
                 data-caption="A group of 3D characters gathered in a park, with a Skip button."
             >
-                <img width="320" height="144" loading="lazy" decoding="async"
-                    src="images/optimized/kulture-09-thumb.webp"
+                <img
+                    width="320"
+                    height="144"
+                    loading="lazy"
+                    decoding="async"
+                    src="images/Capstone/kulture-09-thumb.webp"
                     alt="A group of 3D characters gathered in a park, with a Skip button."
                 >
             </button>
@@ -923,12 +975,16 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/optimized/kulture-10.webp"
+                data-image="images/Capstone/kulture-10.webp"
                 aria-label="View throwing controls"
                 data-caption="Overhead gameplay view with Hold and Release instructions and a Press Hold control."
             >
-                <img width="320" height="144" loading="lazy" decoding="async"
-                    src="images/optimized/kulture-10-thumb.webp"
+                <img
+                    width="320"
+                    height="144"
+                    loading="lazy"
+                    decoding="async"
+                    src="images/Capstone/kulture-10-thumb.webp"
                     alt="Overhead gameplay view with Hold and Release instructions and a Press Hold control."
                 >
             </button>
@@ -939,12 +995,16 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/optimized/kulture-11.webp"
+                data-image="images/Capstone/kulture-11.webp"
                 aria-label="View timed gameplay"
                 data-caption="Overhead gameplay with a countdown timer, movement joystick, and action buttons."
             >
-                <img width="320" height="144" loading="lazy" decoding="async"
-                    src="images/optimized/kulture-11-thumb.webp"
+                <img
+                    width="320"
+                    height="144"
+                    loading="lazy"
+                    decoding="async"
+                    src="images/Capstone/kulture-11-thumb.webp"
                     alt="Overhead gameplay with a countdown timer, movement joystick, and action buttons."
                 >
             </button>
@@ -955,12 +1015,16 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/optimized/kulture-12.webp"
+                data-image="images/Capstone/kulture-12.webp"
                 aria-label="View score-based gameplay"
                 data-caption="Overhead gameplay with a score of zero, a Reach 10 target, and mobile controls."
             >
-                <img width="320" height="144" loading="lazy" decoding="async"
-                    src="images/optimized/kulture-12-thumb.webp"
+                <img
+                    width="320"
+                    height="144"
+                    loading="lazy"
+                    decoding="async"
+                    src="images/Capstone/kulture-12-thumb.webp"
                     alt="Overhead gameplay with a score of zero, a Reach 10 target, and mobile controls."
                 >
             </button>
@@ -971,12 +1035,16 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/optimized/kulture-13.webp"
+                data-image="images/Capstone/kulture-13.webp"
                 aria-label="View patintero success screen"
                 data-caption="Patintero success screen showing 100 points, replay choices, and a next-level button."
             >
-                <img width="320" height="144" loading="lazy" decoding="async"
-                    src="images/optimized/kulture-13-thumb.webp"
+                <img
+                    width="320"
+                    height="144"
+                    loading="lazy"
+                    decoding="async"
+                    src="images/Capstone/kulture-13-thumb.webp"
                     alt="Patintero success screen showing 100 points, replay choices, and a next-level button."
                 >
             </button>
@@ -987,12 +1055,16 @@
             <button
                 class="gallery-thumbnail"
                 type="button"
-                data-image="images/optimized/kulture-14.webp"
+                data-image="images/Capstone/kulture-14.webp"
                 aria-label="View batuhang bola failure screen"
                 data-caption="Batuhang Bola failure screen with Yes and No replay choices."
             >
-                <img width="320" height="144" loading="lazy" decoding="async"
-                    src="images/optimized/kulture-14-thumb.webp"
+                <img
+                    width="320"
+                    height="144"
+                    loading="lazy"
+                    decoding="async"
+                    src="images/Capstone/kulture-14-thumb.webp"
                     alt="Batuhang Bola failure screen with Yes and No replay choices."
                 >
             </button>
@@ -1116,9 +1188,11 @@
             <div class="project-modal-actions">
 
                 <a
-                    href="downloads/Kulture.apk"
+                    href="https://drive.google.com/drive/folders/1qqm3BIWeGz5iAKoTypYWZFSIRHMRWHnB"
                     class="project-modal-action"
-                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Download APK — opens Google Drive folder in a new tab"
                 >
                     Download APK
                 </a>
@@ -1134,10 +1208,17 @@
              CONTACT
         ========================== -->
 
-        <section id="contact" class="contact-section" data-aos="fade-up">
-            <div class="contact-topline">
+        <section
+            id="contact"
+            class="contact-section"
+            data-aos="fade-up"
+        >
+            <div class="section-heading"><h2><span class="section-number" aria-hidden="true">07</span> · Contact</h2></div><div class="contact-topline">
                 <p class="section-eyebrow">LET’S CONNECT</p>
-                <a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+                <a
+                    class="back-to-top"
+                    href="#top"
+                >Back to top <span aria-hidden="true">↑</span></a>
             </div>
             <div class="contact-heading">
                 <h2>Have a project in mind?</h2>
@@ -1145,22 +1226,70 @@
                     and build useful software with a team.</p>
             </div>
             <div class="contact-card-grid">
-                <a class="contact-card" href="mailto:ringorjhunrey@gmail.com">
-                    <svg class="contact-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg><span class="contact-card-copy"><small>Email me</small><span>ringorjhunrey@gmail.com</span></span><span class="contact-arrow" aria-hidden="true">↗</span></a>
-                <a class="contact-card" href="tel:+639455043124">
-                    <svg class="contact-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M10 18h4"/></svg><span class="contact-card-copy"><small>Call me</small><span>09455043124</span></span><span class="contact-arrow" aria-hidden="true">↗</span></a>
-                <a class="contact-card"
+                <a
+                    class="contact-card"
+                    href="mailto:ringorjhunrey@gmail.com"
+                >
+                    <svg
+                        class="contact-icon"
+                        aria-hidden="true"
+                        focusable="false"
+                        viewbox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                    ><rect
+                        x="3"
+                        y="5"
+                        width="18"
+                        height="14"
+                        rx="2"
+                    ></rect><path d="m3 6 9 7 9-7"></path></svg><span class="contact-card-copy"><small>Email me</small><span>ringorjhunrey@gmail.com</span></span><span class="contact-arrow" aria-hidden="true">↗</span></a>
+                <a
+                    class="contact-card"
+                    href="tel:+639455043124"
+                >
+                    <svg
+                        class="contact-icon"
+                        aria-hidden="true"
+                        focusable="false"
+                        viewbox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                    ><rect
+                        x="6"
+                        y="2"
+                        width="12"
+                        height="20"
+                        rx="2"
+                    ></rect><path d="M10 18h4"></path></svg><span class="contact-card-copy"><small>Call me</small><span>09455043124</span></span><span class="contact-arrow" aria-hidden="true">↗</span></a>
+                <a
+                    class="contact-card"
                     href="https://linkedin.com/in/yourprofile"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <svg class="contact-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor"><path d="M4 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM2 9h4v13H2zm7 0h4v2c1-2 3-2 4-2 4 0 5 2 5 6v7h-4v-7c0-2-1-3-2-3-2 0-3 1-3 3v7H9z"/></svg><span class="contact-card-copy"><small>Connect on LinkedIn</small><span>LinkedIn</span></span><span class="contact-arrow" aria-hidden="true">↗</span></a>
-                <a class="contact-card"
+                    <svg
+                        class="contact-icon"
+                        aria-hidden="true"
+                        focusable="false"
+                        viewbox="0 0 24 24"
+                        fill="currentColor"
+                    ><path d="M4 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM2 9h4v13H2zm7 0h4v2c1-2 3-2 4-2 4 0 5 2 5 6v7h-4v-7c0-2-1-3-2-3-2 0-3 1-3 3v7H9z"></path></svg><span class="contact-card-copy"><small>Connect on LinkedIn</small><span>LinkedIn</span></span><span class="contact-arrow" aria-hidden="true">↗</span></a>
+                <a
+                    class="contact-card"
                     href="https://github.com/yourusername"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <svg class="contact-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.6 9.6 0 0 1 12 6.82c.85 0 1.71.11 2.51.33 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.69 0 3.85-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg><span class="contact-card-copy"><small>Explore GitHub</small><span>GitHub</span></span><span class="contact-arrow" aria-hidden="true">↗</span></a>
+                    <svg
+                        class="contact-icon"
+                        aria-hidden="true"
+                        focusable="false"
+                        viewbox="0 0 24 24"
+                        fill="currentColor"
+                    ><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.6 9.6 0 0 1 12 6.82c.85 0 1.71.11 2.51.33 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.69 0 3.85-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"></path></svg><span class="contact-card-copy"><small>Explore GitHub</small><span>GitHub</span></span><span class="contact-arrow" aria-hidden="true">↗</span></a>
             </div>
         </section>
 

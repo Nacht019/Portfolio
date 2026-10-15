@@ -7,3 +7,5 @@
 @import url("./certifications.css");
 @import url("./footer.css");
 @import url("./responsive.css");
+/* Approved terminal design; loaded last to keep component overrides together. */
+@import url("./terminal.css");
